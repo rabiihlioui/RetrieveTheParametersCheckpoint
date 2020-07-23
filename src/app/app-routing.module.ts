@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ChangeColorComponent } from './change-color/change-color.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'color/:color', component: ChangeColorComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
